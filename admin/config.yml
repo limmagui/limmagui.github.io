@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: limmagui/limmagui.github.io
+  repo: limmagui.github.io
   branch: main
 
 media_folder: "assets/img/uploads"
