@@ -1,7 +1,7 @@
 /* ===================================================================
     
     Author          : Valid Theme
-    Template Name   : guilimma | Creative Design
+    Template Name   : Guilimma | Creative Design
     Version         : 1.0
     
 * ================================================================= */
