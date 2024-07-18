@@ -73,7 +73,7 @@ Sidebar heading:  22px 'Manrope', sans-serif
         - Single
     21. Error 404
     22. Footer
-    23. PHP Contact Form
+    23. PHP Contato Form
     24. Others
 
 */
@@ -4430,7 +4430,7 @@ img.bg-move {
 	border-radius: 4px;
 }
 
-.quick-contact-widget {
+.quick-Contato-widget {
 	background-size: cover;
 	position: relative;
 	z-index: 1;
@@ -4439,23 +4439,23 @@ img.bg-move {
 	overflow: hidden;
 }
 
-.quick-contact-widget .content {
+.quick-Contato-widget .content {
 	position: relative;
 	z-index: 1;
 }
 
-.quick-contact-widget h2 {
+.quick-Contato-widget h2 {
 	font-weight: 800;
 	margin-bottom: 10px;
 	margin-top: 25px;
 }
 
-.quick-contact-widget h4 a {
+.quick-Contato-widget h4 a {
 	font-weight: 400;
 	border-bottom: 2px solid;
 }
 
-.quick-contact-widget i {
+.quick-Contato-widget i {
 	display: inline-block;
 	height: 60px;
 	width: 60px;
@@ -4469,7 +4469,7 @@ img.bg-move {
 	position: relative;
 }
 
-.quick-contact-widget i::after {
+.quick-Contato-widget i::after {
 	position: absolute;
 	left: -10px;
 	top: -10px;
@@ -4482,7 +4482,7 @@ img.bg-move {
 	opacity: 0.8;
 }
 
-.quick-contact-widget .btn-sm {
+.quick-Contato-widget .btn-sm {
 	font-size: 16px;
 }
 
@@ -6566,7 +6566,7 @@ ul.list-item li:first-child {
 	border-radius: 50%;
 }
 
-.contact-panel-bg {
+.Contato-panel-bg {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -6727,12 +6727,12 @@ footer .f-item.link li a:hover {
 	color: var(--white);
 }
 
-.f-item.contact li {
+.f-item.Contato li {
 	display: flex;
 	margin-top: 20px;
 }
 
-.f-item.contact li strong {
+.f-item.Contato li strong {
 	display: block;
 	text-transform: uppercase;
 	color: var(--color-heading);
@@ -6740,11 +6740,11 @@ footer .f-item.link li a:hover {
 	margin-bottom: 3px;
 }
 
-.bg-dark .f-item.contact li strong {
+.bg-dark .f-item.Contato li strong {
 	color: var(--white);
 }
 
-.f-item.contact li i {
+.f-item.Contato li i {
 	display: inline-block;
 	height: 45px;
 	width: 45px;
@@ -6758,27 +6758,27 @@ footer .f-item.link li a:hover {
 	font-size: 18px;
 }
 
-.bg-dark .f-item.contact li {
+.bg-dark .f-item.Contato li {
 	color: #dedede;
 }
 
-.f-item.contact li p {
+.f-item.Contato li p {
 	margin: 0;
 }
 
-.bg-dark .f-item.contact li p {
+.bg-dark .f-item.Contato li p {
 	color: #dedede;
 }
 
-.f-item.contact li a {
+.f-item.Contato li a {
 	font-weight: 500;
 }
 
-.bg-dark .f-item.contact li a {
+.bg-dark .f-item.Contato li a {
 	color: #dedede;
 }
 
-.bg-dark .f-item.contact li a:hover {
+.bg-dark .f-item.Contato li a:hover {
 	color: var(--white);
 }
 
@@ -7416,9 +7416,9 @@ ul.list-disc li {
 }
 
 /* ============================================================== 
-    # Contact CSS
+    # Contato CSS
 =================================================================== */
-ul.contact-address {
+ul.Contato-Endereço {
 	padding: 90px 60px;
 	border-radius: 30px;
 	background-size: contain;
@@ -7426,41 +7426,41 @@ ul.contact-address {
 	background-position: right bottom;
 }
 
-ul.contact-address h4 {
+ul.Contato-Endereço h4 {
 	font-weight: 700;
 	margin-bottom: 8px;
 }
 
-ul.contact-address > li {
+ul.Contato-Endereço > li {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 	margin-bottom: 25px;
 	padding-bottom: 25px;
 }
 
-ul.contact-address li:last-child {
+ul.Contato-Endereço li:last-child {
 	margin: 0;
 	padding: 0;
 	border: none;
 }
 
-ul.contact-address li p {
+ul.Contato-Endereço li p {
 	margin: 0;
 }
 
-ul.contact-address li a {
+ul.Contato-Endereço li a {
 	font-weight: 500;
 	color: #cccccc;
 }
 
-ul.contact-address li a:hover {
+ul.Contato-Endereço li a:hover {
 	color: var(--white);
 }
 
-ul.contact-address ul.social-link li {
+ul.Contato-Endereço ul.social-link li {
 	display: inline-block;
 }
 
-ul.contact-address ul.social-link li a {
+ul.Contato-Endereço ul.social-link li a {
 	display: inline-block;
 	height: 50px;
 	width: 50px;
@@ -7472,40 +7472,40 @@ ul.contact-address ul.social-link li a {
 	margin-top: 10px;
 }
 
-ul.contact-address ul.social-link li a:hover {
+ul.Contato-Endereço ul.social-link li a:hover {
 	background: var(--color-primary);
 	color: var(--white);
 }
 
-.contact-form-style-one .form-group {
+.Contato-form-style-one .form-group {
 	margin-bottom: 15px;
 }
 
-.contact-form-style-one input, 
-.contact-form-style-one textarea {
+.Contato-form-style-one input, 
+.Contato-form-style-one textarea {
 	min-height: 60px;
 	padding: 10px 30px;
 	border-radius: 30px;
 }
 
-.contact-form-style-one textarea {
+.Contato-form-style-one textarea {
 	padding-top: 20px;
 	min-height: 220px;
 }
 
-ul.contact-address li a.phone-link {
+ul.Contato-Endereço li a.phone-link {
 	font-size: 36px;
 	font-weight: 800;
 	color: var(--white);
 	text-decoration: underline;
 }
 
-ul.contact-address > li:first-child {
+ul.Contato-Endereço > li:first-child {
 	border: none;
 	margin-bottom: 0;
 }
 
-.contact-form-style-one button {
+.Contato-form-style-one button {
 	border-radius: 30px;
 	margin-top: 13px;
 }
@@ -7801,11 +7801,11 @@ ul.contact-address > li:first-child {
 		display: inline-block;
 	}
 
-	.contact-panel-bg {
+	.Contato-panel-bg {
 		display: none;
 	}
 
-	.panel.contact-panel {
+	.panel.Contato-panel {
 		text-align: center;
 	}
 
@@ -8711,11 +8711,11 @@ ul.contact-address > li:first-child {
 		display: inline-block;
 	}
 
-	.contact-panel-bg {
+	.Contato-panel-bg {
 		display: none;
 	}
 
-	.panel.contact-panel {
+	.panel.Contato-panel {
 		text-align: center;
 	}
 

@@ -1554,22 +1554,22 @@ nav.woocommerce-breadcrumb a {
 	}
 }
 
-.comments-area .contact-comments .submit {
+.comments-area .Contato-comments .submit {
 	margin-bottom: 0;
 }
 
-.comments-area .contact-comments .comments {
+.comments-area .Contato-comments .comments {
 	margin-top: 20px;
 }
 
 @media only screen and (max-width: 767px) {
-	.comments-area .contact-comments .comments {
+	.comments-area .Contato-comments .comments {
 		margin-top: 0;
 	}
 }
 
 @media only screen and (max-width: 767px) {
-	.comments-area .contact-comments .form-group {
+	.comments-area .Contato-comments .form-group {
 		margin-bottom: 15px;
 	}
 }

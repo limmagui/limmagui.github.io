@@ -643,13 +643,13 @@
 			$b = $(this).find('li i').next();
 		$a.on('click', 'li i', function(e) {
 				e.stopPropagation();
-				//if li has ul then dont redirect to link address
+				//if li has ul then dont redirect to link Endereço
 				var $c = $(this).next().hasClass('sub-menu');
 				//console.log($c === true);
 				if ($c === true) {
 					e.preventDefault();
 				}
-				//if li has ul then dont redirect to link address ends
+				//if li has ul then dont redirect to link Endereço ends
 				//debugger;
 
 				$(this).next().slideToggle(300)

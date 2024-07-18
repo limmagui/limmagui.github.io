@@ -231,11 +231,11 @@ Version: 1.0
 	align-items: center;
 }
 
-.navbar .attr-right .attr-nav li.contact {
+.navbar .attr-right .attr-nav li.Contato {
 	position: relative;
 }
 
-.navbar.attr-border-full .attr-right .attr-nav li.contact {
+.navbar.attr-border-full .attr-right .attr-nav li.Contato {
 	top: 0;
 }
 
@@ -355,7 +355,7 @@ Version: 1.0
 }
 
 @media (max-width: 991px) {
-	.navbar .attr-right .attr-nav li.contact {
+	.navbar .attr-right .attr-nav li.Contato {
 		display: none;
 	}
 }
@@ -949,14 +949,14 @@ body.on-side nav.navbar::after {
 	font-size: 28px;
 }
 
-.side .widget.address ul li p {
+.side .widget.Endereço ul li p {
 	text-transform: uppercase;
 	font-weight: 900;
 	margin-bottom: 0;
 	color: var(--dark);
 }
 
-.bg-dark .side .widget.address ul li p {
+.bg-dark .side .widget.Endereço ul li p {
 	color: var(--white);
 }
 
@@ -974,7 +974,7 @@ body.on-side nav.navbar::after {
 	color: var(--white);
 }
 
-.side .widget.address ul li strong {
+.side .widget.Endereço ul li strong {
 	font-weight: 400;
 }
 
@@ -1082,17 +1082,17 @@ body.on-side nav.navbar::after {
 	padding: 0;
 }
 
-.nav-full-width .side .widget.address ul li p {
+.nav-full-width .side .widget.Endereço ul li p {
 	color: var(--white);
 	font-size: 18px;
 	margin-bottom: 3px;
 }
 
-.nav-full-width .side .widget.address ul li p strong {
+.nav-full-width .side .widget.Endereço ul li p strong {
 	color: #cccccc;
 }
 
-.nav-full-width .side .widget.address ul li strong {
+.nav-full-width .side .widget.Endereço ul li strong {
 	color: #cccccc;
 }
 
@@ -1354,7 +1354,7 @@ nav.navbar.validnavs.brand-center {
 		box-shadow: 0px 0px 20px 0px rgba(7, 20, 52, .1);
 	}
 
-	nav.navbar.validnavs.navbar-fixed.no-background .attr-right .attr-nav li.contact::after {
+	nav.navbar.validnavs.navbar-fixed.no-background .attr-right .attr-nav li.Contato::after {
 		background: rgba(255, 255, 255, 0.2);
 	}
 	/* Custom */
@@ -3348,7 +3348,7 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 	}
 }
 
-.navbar.navbar-common .attr-right .attr-nav li.contact {
+.navbar.navbar-common .attr-right .attr-nav li.Contato {
 	margin-left: 0;
 }
 
@@ -3458,7 +3458,7 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 		height: 100%;
 	}
 
-	.navbar.navbar-default.attr-border-full .attr-right .attr-nav li.contact {
+	.navbar.navbar-default.attr-border-full .attr-right .attr-nav li.Contato {
 		position: relative;
 		padding: 32px 30px;
 		margin-left: 30px;
@@ -3466,7 +3466,7 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 		background: var(--color-primary);
 	}
 
-	.navbar.navbar-default.attr-border-full .attr-right .attr-nav li.contact::after {
+	.navbar.navbar-default.attr-border-full .attr-right .attr-nav li.Contato::after {
 		height: 100%;
 	}
 }

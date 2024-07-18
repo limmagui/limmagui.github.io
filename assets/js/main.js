@@ -319,9 +319,9 @@
 
 
 		/* ==================================================
-		    Contact Form Validations
+		    Contato Form Validations
 		================================================== */
-		$('.contact-form').each(function() {
+		$('.Contato-form').each(function() {
 			var formInstance = $(this);
 			formInstance.submit(function() {
 
@@ -343,7 +343,7 @@
 						function(data) {
 							document.getElementById('message').innerHTML = data;
 							$('#message').slideDown('slow');
-							$('.contact-form img.loader').fadeOut('slow', function() {
+							$('.Contato-form img.loader').fadeOut('slow', function() {
 								$(this).remove()
 							});
 							$('#submit').removeAttr('disabled');
