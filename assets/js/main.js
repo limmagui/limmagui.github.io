@@ -1,7 +1,7 @@
 /* ===================================================================
     
     Author          : Valid Theme
-    Template Name   : Avrix - Digital Agency Portfolio Template
+    Template Name   : guilimma | Creative Design
     Version         : 1.0
     
 * ================================================================= */
