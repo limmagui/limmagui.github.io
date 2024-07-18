@@ -88,17 +88,17 @@ Sidebar heading:  22px 'Manrope', sans-serif
 	--fontawesome: "Font Awesome 5 Pro";
 	--black: #000000;
 	--dark: #1d1d1d;
-	--dark-secondary: #262525;
+	--dark-secondary: #313130;
 	--white: #ffffff;
-	--color-primary: #5138ee;
-	--color-secondary: #02ebad;
+	--color-primary: #285EAA;
+	--color-secondary: #75A5D9;
 	--color-heading: #04000b;
 	--color-paragraph: #666666;
 	--box-shadow-primary: -1px 3px 10px 0 rgba(0, 0, 0, 0.6);
 	--box-shadow-secondary: 0 10px 30px 0 rgba(44, 130, 237, 0.4);
 	--box-shadow-regular: 0px 2px 12px 0px #e7e7e7;
 	--bg-gray: #f1f3f5;
-	--bg-gradient: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%);
+	--bg-gradient: linear-gradient(45deg, #75A5D9 0%, #5a57fb 50%);
 }
 
 
@@ -4060,7 +4060,7 @@ a.btn-round-animation.dark {
 }
 
 .bg-dark .cteative-service-item {
-	background: #262525;
+	background: #313130;
 	box-shadow: none;
 }
 
