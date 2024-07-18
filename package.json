@@ -1,0 +1,14 @@
+{
+  "name": "limmagui.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/limmagui/limmagui.github.io",
+  "author": "lucanmu <lucanmu@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "animejs": "^3.2.2"
+  },
+  "scripts": {
+    "build": "echo 'No build step needed'"
+  }
+}
