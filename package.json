@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "echo 'No build step needed'",
-    "start": "http-server .",  // Servidor HTTP para servir arquivos estáticos
-    "start:cms": "netlify-cms-proxy-server" // Adiciona um comando separado para o Netlify CMS
+    "start": "http-server .",
+    "start:cms": "netlify-cms-proxy-server"
   }
 }
