@@ -103,9 +103,11 @@
                         </li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="Contato-us.html">Contato</a></li>
-                        <li>
-                            <label for="theme-toggle">Fundo Escuro</label>
-                            <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+                        <li class="toggle-container">
+                            <label class="slider-toggle">
+                                <input type="checkbox" id="theme-toggle" onclick="toggleTheme()" checked>
+                                <span class="slider"></span>
+                            </label>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -196,7 +198,7 @@
     </header>
     <!-- End Header -->
 
-    <script>
+    <<script>
         function toggleTheme() {
             var checkbox = document.getElementById('theme-toggle');
             if (!checkbox.checked) {
@@ -205,9 +207,6 @@
         }
     </script>
     <script src="path/to/your/js/scripts.js"></script>
-
-    
-
     <!-- Start Banner 
     ============================================= -->
     <div class="banner-style-one" style="background-image: url(assets/img/shape/12.png);">

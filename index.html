@@ -102,9 +102,12 @@
                         </li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="Contato-us.html">Contato</a></li>
-                        <li>
-                            <label for="theme-toggle">Fundo Branco</label>
-                            <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+                        <li class="toggle-container">
+                            
+                            <label class="slider-toggle">
+                                <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+                                <span class="slider"></span>
+                            </label>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -200,8 +203,6 @@
             var checkbox = document.getElementById('theme-toggle');
             if (checkbox.checked) {
                 window.location.href = 'index-light.html';
-            } else {
-                window.location.href = 'index.html';
             }
         }
     </script>
