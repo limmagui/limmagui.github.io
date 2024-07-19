@@ -42,7 +42,7 @@ Sidebar heading:  22px 'Manrope', sans-serif
         - Banner Creative
         - Banner Digital Agency
         - Banner Portfolio
-    05. Services
+    05. Serviços
         - Version One
         - Version Two
         - Service Single
@@ -4038,10 +4038,10 @@ a.btn-round-animation.dark {
 
 
 /* ============================================================== 
-    # Services
+    # Serviços
 =================================================================== */
 
-.services-item-one-items .services-carousel {
+.Serviços-item-one-items .Serviços-carousel {
 	position: relative;
 	padding: 30px;
 	top: -30px;
@@ -4120,13 +4120,13 @@ a.btn-round-animation.dark {
 	opacity: 0.04;
 }
 
-.services-carousel.owl-carousel .owl-dots {
+.Serviços-carousel.owl-carousel .owl-dots {
 	position: absolute;
 	top: -90px;
 	right: 100px;
 }
 
-.services-carousel.owl-carousel .owl-dots .owl-dot span {
+.Serviços-carousel.owl-carousel .owl-dots .owl-dot span {
 	background: transparent;
 	border: 2px solid;
 	height: 25px;
@@ -4136,7 +4136,7 @@ a.btn-round-animation.dark {
 	opacity: 0.6;
 }
 
-.services-carousel.owl-carousel .owl-dots .owl-dot span::after {
+.Serviços-carousel.owl-carousel .owl-dots .owl-dot span::after {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -4149,11 +4149,11 @@ a.btn-round-animation.dark {
 	opacity: 0.6;
 }
 
-.services-carousel.owl-carousel .owl-dots .owl-dot.active span {
+.Serviços-carousel.owl-carousel .owl-dots .owl-dot.active span {
 	opacity: 1;
 }
 
-.services-carousel.owl-carousel .owl-dots .owl-dot.active span::after {
+.Serviços-carousel.owl-carousel .owl-dots .owl-dot.active span::after {
 	opacity: 1;
 }
 
@@ -4166,8 +4166,8 @@ img.bg-move {
 	z-index: 9;
 }
 
-.services-button-prev,
-.services-button-next {
+.Serviços-button-prev,
+.Serviços-button-next {
 	height: 60px;
 	width: 70px;
 	line-height: 60px;
@@ -4175,7 +4175,7 @@ img.bg-move {
 	z-index: 1;
 }
 
-.services-nav .nav-items {
+.Serviços-nav .nav-items {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -4184,19 +4184,19 @@ img.bg-move {
 	border-radius: 30px;
 }
 
-.bg-dark .services-nav .nav-items {
+.bg-dark .Serviços-nav .nav-items {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.services-button-prev {
+.Serviços-button-prev {
 	border-right: 1px solid #dddddd;
 }
 
-.bg-dark .services-button-prev {
+.bg-dark .Serviços-button-prev {
 	border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.services-button-next::after {
+.Serviços-button-next::after {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -4206,7 +4206,7 @@ img.bg-move {
 	margin-top: 1px;
 }
 
-.services-button-prev::after {
+.Serviços-button-prev::after {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -4216,7 +4216,7 @@ img.bg-move {
 	margin-top: 1px;
 }
 
-.services-nav {
+.Serviços-nav {
 	display: flex;
 	position: relative;
 	right: 0;
@@ -4228,25 +4228,25 @@ img.bg-move {
 }
 
 @media (min-width: 576px) {
-	.services-nav {
+	.Serviços-nav {
 		max-width: 540px;
 	}
 }
 
 @media (min-width: 768px) {
-	.services-nav {
+	.Serviços-nav {
 		max-width: 720px;
 	}
 }
 
 @media (min-width: 992px) {
-	.services-nav {
+	.Serviços-nav {
 		max-width: 960px;
 	}
 }
 
 @media (min-width: 1400px) {
-	.services-nav {
+	.Serviços-nav {
 		max-width: 1320px;
 	}
 }
@@ -4384,18 +4384,18 @@ img.bg-move {
 
 
 /* ============================================================== 
-    # Services Details
+    # Serviços Details
 =================================================================== */
-.services-details-area .thumb img {
+.Serviços-details-area .thumb img {
 	margin-bottom: 40px;
 }
 
-.services-details-area h1, 
-  .services-details-area h2, 
-  .services-details-area h3, 
-  .services-details-area h4, 
-  .services-details-area h5, 
-  .services-details-area h6 {
+.Serviços-details-area h1, 
+  .Serviços-details-area h2, 
+  .Serviços-details-area h3, 
+  .Serviços-details-area h4, 
+  .Serviços-details-area h5, 
+  .Serviços-details-area h6 {
 	font-weight: 800;
 }
 
@@ -4486,11 +4486,11 @@ img.bg-move {
 	font-size: 16px;
 }
 
-.services-sidebar .single-widget {
+.Serviços-sidebar .single-widget {
 	margin-top: 50px;
 }
 
-.services-sidebar .single-widget .widget-title {
+.Serviços-sidebar .single-widget .widget-title {
 	display: block;
 	font-weight: 800;
 	margin-bottom: 30px;
@@ -4501,7 +4501,7 @@ img.bg-move {
 	padding-bottom: 15px;
 }
 
-.services-sidebar .single-widget .widget-title::after {
+.Serviços-sidebar .single-widget .widget-title::after {
 	position: absolute;
 	left: 10px;
 	bottom: 0;
@@ -4511,7 +4511,7 @@ img.bg-move {
 	border-bottom: 3px solid var(--color-primary);
 }
 
-.services-sidebar .single-widget .widget-title::before {
+.Serviços-sidebar .single-widget .widget-title::before {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -4521,11 +4521,11 @@ img.bg-move {
 	background: var(--dark);
 }
 
-.services-sidebar .single-widget h4.widget-title {
+.Serviços-sidebar .single-widget h4.widget-title {
 	font-size: 24px;
 }
 
-.services-sidebar .single-widget:first-child {
+.Serviços-sidebar .single-widget:first-child {
 	margin-top: 0;
 }
 
@@ -4579,12 +4579,12 @@ img.bg-move {
 }
 
 @media only screen and (max-width: 767px) {
-	.services-more .row {
+	.Serviços-more .row {
 		margin-top: -20px;
 	}
 }
 
-.services-more .item {
+.Serviços-more .item {
 	padding: 50px 35px;
 	overflow: hidden;
 	margin-top: 15px;
@@ -4594,23 +4594,23 @@ img.bg-move {
 	box-shadow: 0 30px 80px rgba(90,144,225,.1);
 }
 
-.services-more .item img {
+.Serviços-more .item img {
 	height: 80px;
 	margin-bottom: 30px;
 }
 
-.services-more .item i::before {
+.Serviços-more .item i::before {
 	line-height: inherit;
 }
 
 @media only screen and (max-width: 767px) {
-	.services-more .item {
+	.Serviços-more .item {
 		margin-top: 30px;
 		text-align: center;
 	}
 }
 
-.services-more .item i {
+.Serviços-more .item i {
 	display: inline-block;
 	font-size: 40px;
 	margin-bottom: 30px;
@@ -4623,15 +4623,15 @@ img.bg-move {
 	border-radius: 50%;
 }
 
-.services-more .item a {
+.Serviços-more .item a {
 	color: var(--color-heading);
 }
 
-.services-more .item a:hover {
+.Serviços-more .item a:hover {
 	color: var(--color-primary);
 }
 
-.services-more .item p {
+.Serviços-more .item p {
 	margin: 0;
 }
 
@@ -4644,7 +4644,7 @@ img.bg-move {
 	margin-bottom: 40px;
 }
 
-.services-list-widget {
+.Serviços-list-widget {
 	padding: 50px;
 	background-size: cover;
 	background-position: center;
@@ -4652,7 +4652,7 @@ img.bg-move {
 	padding-top: 60px;
 }
 
-.services-list-widget a {
+.Serviços-list-widget a {
 	display: block;
 	padding: 10px 0;
 	font-weight: 700;
@@ -4661,21 +4661,21 @@ img.bg-move {
 	font-size: 17px;
 }
 
-.services-list-widget .current-item a {
+.Serviços-list-widget .current-item a {
 	color: var(--color-primary);
 	font-weight: 800;
 }
 
-.services-list-widget li {
+.Serviços-list-widget li {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.services-list-widget li:first-child {
+.Serviços-list-widget li:first-child {
 	border: none;
 	margin-top: -10px;
 }
 
-.services-list-widget a i {
+.Serviços-list-widget a i {
 	float: right;
 	font-weight: 400;
 	position: absolute;
@@ -4685,7 +4685,7 @@ img.bg-move {
 	margin-top: 1px;
 }
 
-.services-sidebar .single-widget.text-light .widget-title::after {
+.Serviços-sidebar .single-widget.text-light .widget-title::after {
 	border-color: var(--white);
 }
 
@@ -8086,7 +8086,7 @@ ul.Contato-Endereço > li:first-child {
 		margin: 0;
 	}
 
-	/* Services */
+	/* Serviços */
 
 	.cteative-service-item {
 		padding: 60px 30px;
@@ -8098,7 +8098,7 @@ ul.Contato-Endereço > li:first-child {
 		border: none;
 	}
 
-	.services-nav {
+	.Serviços-nav {
 		top: 0;
 		margin: 0;
 		justify-content: left;
@@ -8106,7 +8106,7 @@ ul.Contato-Endereço > li:first-child {
 		margin-bottom: 40px;
 	}
 
-	.services-item-one-items .services-carousel {
+	.Serviços-item-one-items .Serviços-carousel {
 		top: 0;
 		margin: 0;
 		padding: 0;
@@ -8719,8 +8719,8 @@ ul.Contato-Endereço > li:first-child {
 		text-align: center;
 	}
 
-	/* Services */
-	.services-nav {
+	/* Serviços */
+	.Serviços-nav {
 		top: 0;
 		margin: 0;
 		justify-content: left;
@@ -8728,7 +8728,7 @@ ul.Contato-Endereço > li:first-child {
 		margin-bottom: 40px;
 	}
 
-	.services-item-one-items .services-carousel {
+	.Serviços-item-one-items .Serviços-carousel {
 		top: 0;
 		margin: 0;
 		padding: 0;

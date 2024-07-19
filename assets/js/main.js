@@ -181,9 +181,9 @@
 
 
 		/* ==================================================
-            # Services Carousel
+            # Serviços Carousel
          ===============================================*/
-		const servicesCarousel = new Swiper(".services-carousel", {
+		const ServiçosCarousel = new Swiper(".Serviços-carousel", {
 			// Optional parameters
 			loop: true,
 			autoplay: true,
@@ -193,8 +193,8 @@
 			spaceBetween: 30,
 			// Navigation arrows
 			navigation: {
-				nextEl: ".services-button-next",
-				prevEl: ".services-button-prev"
+				nextEl: ".Serviços-button-next",
+				prevEl: ".Serviços-button-prev"
 			},
 			breakpoints: {
 				768: {
@@ -357,7 +357,7 @@
 
 
 		/* ==================================================
-		    Services Hover JS
+		    Serviços Hover JS
 		================================================== */
 		const link = document.querySelectorAll('.service-hover-item');
 		const linkHoverReveal = document.querySelectorAll('.service-hover-wrapper');
