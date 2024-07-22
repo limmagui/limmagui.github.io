@@ -14,150 +14,51 @@ collections:
         file: "index.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
 
       - name: "about-us"
         label: "Sobre Nós"
         file: "about-us.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
 
       - name: "contact-us"
         label: "Contato"
         file: "contact-us.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
 
       - name: "404"
         label: "Página 404"
         file: "404.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
 
       - name: "services"
         label: "Serviços"
         file: "services.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
 
       - name: "portfolio"
         label: "Portfólio"
         file: "portfolio.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
 
       - name: "team"
         label: "Equipe"
         file: "team.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
 
       # Adicione outras páginas conforme necessário
-      - name: "blog-standard"
-        label: "Blog Padrão"
-        file: "blog-standard.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "blog-single"
-        label: "Blog Único"
-        file: "blog-single.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "blog-single-with-sidebar"
-        label: "Blog Único com Sidebar"
-        file: "blog-single-with-sidebar.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "blog-with-sidebar"
-        label: "Blog com Sidebar"
-        file: "blog-with-sidebar.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "blog-3-colum"
-        label: "Blog 3 Colunas"
-        file: "blog-3-colum.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "blog-2-colum"
-        label: "Blog 2 Colunas"
-        file: "blog-2-colum.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "project"
-        label: "Projeto"
-        file: "project.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "project-details"
-        label: "Detalhes do Projeto"
-        file: "project-details.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "project-details-2"
-        label: "Detalhes do Projeto 2"
-        file: "project-details-2.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "index-light"
-        label: "Página Inicial Light"
-        file: "index-light.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "index-3"
-        label: "Página Inicial 3"
-        file: "index-3.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "index-4"
-        label: "Página Inicial 4"
-        file: "index-4.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "team-details"
-        label: "Detalhes da Equipe"
-        file: "team-details.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      - name: "services-details"
-        label: "Detalhes dos Serviços"
-        file: "services-details.html"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
-
-      # Adicione mais arquivos HTML conforme necessário
 
   - name: "assets"
     label: "Imagens e Arquivos"
