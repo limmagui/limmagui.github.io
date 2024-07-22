@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main # substitua com o nome da sua branch principal
+
+media_folder: "static/img" # pasta para armazenar os uploads
+public_folder: "/img"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
