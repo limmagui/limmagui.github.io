@@ -1,109 +1,16 @@
 backend:
   name: git-gateway
-  branch: main  # Substitua pelo nome da sua branch principal
+  branch: main # substitua com o nome da sua branch principal
 
-media_folder: "static/img"  # Pasta para armazenar arquivos de mídia
+media_folder: "assets/img" # pasta para armazenar os uploads
 public_folder: "/img"
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    folder: ""
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Content", name: "body", widget: "markdown" }
-
-  - name: "static_files"
-    label: "Static Files"
-    folder: "static"
-    create: false
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "File", name: "file", widget: "file" }
-
-  - name: "assets"
-    label: "Assets"
-    folder: "assets"
-    create: false
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "File", name: "file", widget: "file" }
-
-  - name: "site_config"
-    label: "Site Config"
-    files:
-      - file: "static/admin/config.yml"
-        label: "Admin Config"
-        name: "admin-config"
-        fields:
-          - { label: "Configuration", name: "config", widget: "code", language: "yaml" }
-      - file: "404.html"
-        label: "404 Page"
-        name: "404-page"
-        fields:
-          - { label: "Content", name: "content", widget: "markdown" }
-      - file: "README.md"
-        label: "Readme"
-        name: "readme"
-        fields:
-          - { label: "Content", name: "content", widget: "markdown" }
-      - file: "package.json"
-        label: "Package JSON"
-        name: "package-json"
-        fields:
-          - { label: "Content", name: "content", widget: "code", language: "json" }
-      - file: "yarn.lock"
-        label: "Yarn Lock"
-        name: "yarn-lock"
-        fields:
-          - { label: "Content", name: "content", widget: "code", language: "text" }
-      - file: "style.css"
-        label: "CSS"
-        name: "style-css"
-        fields:
-          - { label: "Content", name: "content", widget: "code", language: "css" }
-      - file: "index.html"
-        label: "Index Page"
-        name: "index-page"
-        fields:
-          - { label: "Content", name: "content", widget: "code", language: "html" }
-
-  - name: "blog"
-    label: "Blog"
-    folder: "blog"
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Content", name: "content", widget: "markdown" }
-
-  - name: "portfolio"
-    label: "Portfolio"
-    folder: "portfolio"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Content", name: "content", widget: "markdown" }
-
-  - name: "services"
-    label: "Services"
-    folder: "services"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Content", name: "content", widget: "markdown" }
-
-  - name: "team"
-    label: "Team"
-    folder: "team"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Content", name: "content", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
