@@ -24,6 +24,24 @@ collections:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
 
+  - name: "icons" # Nova coleção para ícones
+    label: "Ícones"
+    folder: "assets/img/icon" # Pasta onde os ícones serão armazenados
+    create: true
+    fields:
+      - { label: "Nome", name: "name", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Arquivo", name: "file", widget: "file" }
+
+  - name: "shapes" # Nova coleção para formas
+    label: "Formas"
+    folder: "assets/img/shape" # Pasta onde as formas serão armazenadas
+    create: true
+    fields:
+      - { label: "Nome", name: "name", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Arquivo", name: "file", widget: "file" }
+
       - name: "about-us"
         label: "Sobre Nós"
         file: "about-us.html"
