@@ -1,16 +1,69 @@
 backend:
   name: git-gateway
-  branch: main # substitua com o nome da sua branch principal
+  branch: main # Altere para a branch principal do seu repositório
 
-media_folder: "assets/img" # pasta para armazenar os uploads
-public_folder: "/img"
+media_folder: "assets/img" # Pasta onde as imagens serão armazenadas
+public_folder: "/assets/img"
 
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "_posts"
+  - name: "pages" # Nome da coleção
+    label: "Páginas"
+    files:
+      - name: "index"
+        label: "Página Inicial"
+        file: "index.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Conteúdo", name: "content", widget: "markdown" }
+
+      - name: "about-us"
+        label: "Sobre Nós"
+        file: "about-us.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Conteúdo", name: "content", widget: "markdown" }
+
+      - name: "contact-us"
+        label: "Contato"
+        file: "contact-us.html"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Conteúdo", name: "content", widget: "markdown" }
+
+      # Adicione outras páginas conforme necessário
+
+  - name: "blog"
+    label: "Blog"
+    folder: "blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Conteúdo", name: "content", widget: "markdown" }
+
+  - name: "assets"
+    label: "Imagens e Arquivos"
+    folder: "assets/img"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nome", name: "name", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Arquivo", name: "file", widget: "file" }
+
+  - name: "config"
+    label: "Configurações do Site"
+    files:
+      - name: "settings"
+        label: "Configurações"
+        file: "data/settings.yml"
+        fields:
+          - { label: "Título do Site", name: "site_title", widget: "string" }
+          - { label: "Descrição do Site", name: "site_description", widget: "text" }
+          - { label: "E-mail de Contato", name: "contact_email", widget: "string" }
+          - { label: "Links Sociais", name: "social_links", widget: "object", fields: [
+              { label: "Twitter", name: "twitter", widget: "string" },
+              { label: "Facebook", name: "facebook", widget: "string" },
+              { label: "Instagram", name: "instagram", widget: "string" }
+            ]}
