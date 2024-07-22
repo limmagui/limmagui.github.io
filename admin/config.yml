@@ -5,6 +5,13 @@ backend:
 media_folder: "assets/img" # Pasta onde as imagens serão armazenadas
 public_folder: "/assets/img"
 
+media_folder: "assets/img/icon" # Pasta onde as imagens serão armazenadas
+public_folder: "/assets/img/icon"
+
+media_folder: "assets/img/shape" # Pasta onde as imagens serão armazenadas
+public_folder: "/assets/img/shape"
+
+
 collections:
 
 - name: "media"
