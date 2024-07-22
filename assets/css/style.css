@@ -726,7 +726,7 @@ p {
 	content: "";
 	height: 100%;
 	width: 100%;
-	background: url(../img/shape/35.png);
+	background: url(../img//35.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom center;
@@ -4022,7 +4022,7 @@ a.btn-round-animation.dark {
 	top: 0;
 	height: 100%;
 	width: 500%;
-	background: url(../img/shape/graph.png);
+	background: url(../img//graph.png);
 	content: "";
 	background-repeat: no-repeat;
 }
@@ -4700,7 +4700,7 @@ img.bg-move {
 }
 
 .about-style-one-thumb .fun-fact {
-	background: url(../img/shape/9.png);
+	background: url(../img//9.png);
 	position: absolute;
 	right: 50px;
 	bottom: -50px;
@@ -4880,7 +4880,7 @@ ul.list-simple li::after {
 	content: "";
 	height: 100%;
 	width: 100%;
-	background: url(../img/shape/8.png);
+	background: url(../img//8.png);
 	z-index: -1;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -5622,7 +5622,7 @@ a.pf-btn i {
 	content: "";
 	height: 40px;
 	width: 40px;
-	background: url(../img/shape/4.png);
+	background: url(../img//4.png);
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-size: contain;
@@ -5631,7 +5631,7 @@ a.pf-btn i {
 }
 
 .brand-style-two-area .brand-conetnt .item::after {
-	background: url(../img/shape/4-dark.png);
+	background: url(../img//4-dark.png);
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-size: contain;
@@ -5644,7 +5644,7 @@ a.pf-btn i {
 	content: "";
 	height: 40px;
 	width: 40px;
-	background: url(../img/shape/4.png);
+	background: url(../img//4.png);
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-size: contain;
@@ -5736,7 +5736,7 @@ a.pf-btn i {
 	content: "";
 	height: 160%;
 	width: 160%;
-	background: url(../img/shape/globe.png);
+	background: url(../img//globe.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;

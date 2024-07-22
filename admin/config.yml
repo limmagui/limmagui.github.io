@@ -6,11 +6,11 @@ backend:
 media_folder: "assets/img" # Pasta padrão onde as imagens serão armazenadas
 public_folder: "/assets/img"
 
-media2_folder: "assets/img/icon" # Pasta onde ícones serão armazenados
-public2_folder: "/assets/img/icon"
+media2_folder: "assets/img/" # Pasta onde ícones serão armazenados
+public2_folder: "/assets/img/"
 
-media3_folder: "assets/img/shape" # Pasta onde formas serão armazenadas
-public3_folder: "/assets/img/shape"
+media3_folder: "assets/img/" # Pasta onde formas serão armazenadas
+public3_folder: "/assets/img/"
 
 collections:
 
@@ -26,7 +26,7 @@ collections:
 
   - name: "icons" # Nova coleção para ícones
     label: "Ícones"
-    folder: "assets/img/icon" # Pasta onde os ícones serão armazenados
+    folder: "assets/img/" # Pasta onde os ícones serão armazenados
     create: true
     fields:
       - { label: "Nome", name: "name", widget: "string" }
@@ -35,7 +35,7 @@ collections:
 
   - name: "shapes" # Nova coleção para formas
     label: "Formas"
-    folder: "assets/img/shape" # Pasta onde as formas serão armazenadas
+    folder: "assets/img/" # Pasta onde as formas serão armazenadas
     create: true
     fields:
       - { label: "Nome", name: "name", widget: "string" }
