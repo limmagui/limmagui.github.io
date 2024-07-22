@@ -14,16 +14,6 @@ public3_folder: "/assets/img/shape"
 
 collections:
 
-- name: "media"
-    label: "Mídia"
-    folder: "assets/img" # Pasta onde as imagens e arquivos estão localizados
-    create: false
-    slug: "{{slug}}"
-    fields:
-      - { label: "Nome", name: "name", widget: "string" }
-      - { label: "Descrição", name: "description", widget: "text" }
-      - { label: "Arquivo", name: "file", widget: "file" }
-
   - name: "pages" # Nome da coleção
     label: "Páginas"
     files:
