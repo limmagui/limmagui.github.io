@@ -2,15 +2,15 @@ backend:
   name: git-gateway
   branch: main # Altere para a branch principal do seu repositório
 
-media_folder: "assets/img" # Pasta onde as imagens serão armazenadas
+# Configurações de pastas para diferentes tipos de mídia
+media_folder: "assets/img" # Pasta padrão onde as imagens serão armazenadas
 public_folder: "/assets/img"
 
-media2_folder: "assets/img/icon" # Pasta onde as imagens serão armazenadas
+media2_folder: "assets/img/icon" # Pasta onde ícones serão armazenados
 public2_folder: "/assets/img/icon"
 
-media3_folder: "assets/img/shape" # Pasta onde as imagens serão armazenadas
+media3_folder: "assets/img/shape" # Pasta onde formas serão armazenadas
 public3_folder: "/assets/img/shape"
-
 
 collections:
 
@@ -72,7 +72,6 @@ collections:
     label: "Imagens e Arquivos"
     folder: "assets/img"
     create: true
-    slug: "{{slug}}"
     fields:
       - { label: "Nome", name: "name", widget: "string" }
       - { label: "Descrição", name: "description", widget: "text" }
