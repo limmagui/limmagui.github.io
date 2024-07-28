@@ -9701,3 +9701,18 @@ input:checked + .slider:after {
     right: auto;
 }
 /* Fim do estilo do toggle deslizante */
+
+/*inio circulo banner*/
+
+#banner {
+    text-align: center;
+    padding: 20px;
+}
+
+svg {
+    width: 150px;
+    height: 150px;
+}
+
+
+/*fim circulo banner*/
