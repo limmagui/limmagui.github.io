@@ -28,34 +28,41 @@
     <link href="style.css" rel="stylesheet">
     <!-- ========== End Stylesheet ========== -->
 
+    <style>
+        /* Estilos específicos para iPhone e iPad */
+        @media only screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+            .curve-text text {
+                font-size: 14px; /* Ajuste conforme necessário */
+                letter-spacing: 1px; /* Ajuste conforme necessário */
+            }
+        }
+
+        /* Estilos para garantir legibilidade em iPhones maiores (ex.: iPhone 11, 12, 13 Pro Max) */
+        @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) {
+            .curve-text text {
+                font-size: 16px; /* Ajuste conforme necessário */
+                letter-spacing: 1px; /* Ajuste conforme necessário */
+            }
+        }
+
+        /* Estilos para iPads */
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+            .curve-text text {
+                font-size: 18px; /* Ajuste conforme necessário */
+                letter-spacing: 1px; /* Ajuste conforme necessário */
+            }
+        }
+    </style>
+
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
-    <style>
-        .curve-text {
-            position: relative;
-            width: 150px;
-            height: 150px;
-            margin: auto;
-        }
-
-        .curve-text svg {
-            width: 100%;
-            height: 100%;
-        }
-
-        .curve-text text {
-            font-size: 24px;
-            fill: #000; /* Ajuste a cor conforme necessário */
-        }
-    </style>
 </head>
 
 <body class="bg-dark">
 
-    <!-- Start Preloader 
-    ============================================= -->
+    <!-- Start Preloader ============================================= -->
     <div id="preloader">
         <div id="avrix-preloader" class="avrix-preloader">
             <div class="animation-preloader">
@@ -222,15 +229,12 @@
             var checkbox = document.getElementById('theme-toggle');
             if (checkbox.checked) {
                 window.location.href = 'index-light.html';
-            } else {
-                window.location.href = 'index.html';
             }
         }
     </script>
-    <!-- Header End -->
+    <script src="path/to/your/js/scripts.js"></script>
 
-    <!-- Start Banner 
-    ============================================= -->
+    <!-- Start Banner ============================================= -->
     <div class="banner-style-one" style="background-image: url(assets/img/shape-1.png);">
         <div class="container">
             <div class="row align-center">
@@ -240,6 +244,10 @@
                 </div>
                 <div class="col-lg-3 offset-lg-1 banner-one-item text-center">
                     <div class="curve-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
+                            <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
+                            <text><textPath href="#textPath">UX Design Brand e Website</textPath></text>
+                        </svg>
                         <a href="https://www.youtube.com/watch?v=ipUuoMCEbDQ" class="popup-youtube"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -247,40 +255,6 @@
         </div>
     </div>
     <!-- End Banner -->
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const curveTextContainer = document.querySelector('.curve-text');
-
-            // Cria o elemento SVG
-            const svgNS = "http://www.w3.org/2000/svg";
-            const svg = document.createElementNS(svgNS, "svg");
-            svg.setAttribute("xmlns", svgNS);
-            svg.setAttribute("viewBox", "0 0 150 150");
-            svg.setAttribute("version", "1.1");
-            svg.setAttribute("width", "100%");
-            svg.setAttribute("height", "100%");
-
-            // Cria o caminho circular
-            const path = document.createElementNS(svgNS, "path");
-            path.setAttribute("id", "textPath");
-            path.setAttribute("d", "M 75,75 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0");
-
-            // Cria o elemento de texto
-            const text = document.createElementNS(svgNS, "text");
-            const textPath = document.createElementNS(svgNS, "textPath");
-            textPath.setAttribute("href", "#textPath");
-            textPath.setAttribute("startOffset", "50%");
-            textPath.setAttribute("text-anchor", "middle");
-            textPath.textContent = "UX Design Brand e Website";
-
-            // Anexa os elementos juntos
-            text.appendChild(textPath);
-            svg.appendChild(path);
-            svg.appendChild(text);
-            curveTextContainer.appendChild(svg);
-        });
-    </script>
 
     <!-- Start Background Move 
     ============================================= -->

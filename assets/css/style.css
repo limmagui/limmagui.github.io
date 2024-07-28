@@ -2537,7 +2537,31 @@ button i {
 		--bs-gutter-x: 1.5rem;
 	}
 }
+/* Adicione estas regras ao seu arquivo CSS */
 
+/* Estilos específicos para iPhone e iPad */
+@media only screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+    .curve-text text {
+        font-size: 14px; /* Ajuste conforme necessário */
+        letter-spacing: 1px; /* Ajuste conforme necessário */
+    }
+}
+
+/* Estilos para garantir legibilidade em iPhones maiores (ex.: iPhone 11, 12, 13 Pro Max) */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) {
+    .curve-text text {
+        font-size: 16px; /* Ajuste conforme necessário */
+        letter-spacing: 1px; /* Ajuste conforme necessário */
+    }
+}
+
+/* Estilos para iPads */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .curve-text text {
+        font-size: 18px; /* Ajuste conforme necessário */
+        letter-spacing: 1px; /* Ajuste conforme necessário */
+    }
+}
 a.btn-round-animation {
 	display: inline-block;
 	height: 180px;
