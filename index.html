@@ -32,6 +32,24 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
+    <style>
+        .curve-text {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: auto;
+        }
+
+        .curve-text svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .curve-text text {
+            font-size: 12px;
+            fill: #000; /* Ajuste a cor conforme necessário */
+        }
+    </style>
 </head>
 
 <body class="bg-dark">
@@ -62,7 +80,7 @@
         </div>
     </div>
     <!-- End Preloader -->
-    
+
     <!-- Header ============================================= -->
     <header>
         <!-- Start Navigation -->
@@ -204,11 +222,13 @@
             var checkbox = document.getElementById('theme-toggle');
             if (checkbox.checked) {
                 window.location.href = 'index-light.html';
+            } else {
+                window.location.href = 'index.html';
             }
         }
     </script>
-    <script src="path/to/your/js/scripts.js"></script>
-    
+    <!-- Header End -->
+
     <!-- Start Banner 
     ============================================= -->
     <div class="banner-style-one" style="background-image: url(assets/img/shape-1.png);">
@@ -226,9 +246,41 @@
             </div>
         </div>
     </div>
-    
-    <script src="assets/js/circulo-banner.js"></script>
     <!-- End Banner -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const curveTextContainer = document.querySelector('.curve-text');
+
+            // Cria o elemento SVG
+            const svgNS = "http://www.w3.org/2000/svg";
+            const svg = document.createElementNS(svgNS, "svg");
+            svg.setAttribute("xmlns", svgNS);
+            svg.setAttribute("viewBox", "0 0 150 150");
+            svg.setAttribute("version", "1.1");
+            svg.setAttribute("width", "100%");
+            svg.setAttribute("height", "100%");
+
+            // Cria o caminho circular
+            const path = document.createElementNS(svgNS, "path");
+            path.setAttribute("id", "textPath");
+            path.setAttribute("d", "M 75,75 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0");
+
+            // Cria o elemento de texto
+            const text = document.createElementNS(svgNS, "text");
+            const textPath = document.createElementNS(svgNS, "textPath");
+            textPath.setAttribute("href", "#textPath");
+            textPath.setAttribute("startOffset", "50%");
+            textPath.setAttribute("text-anchor", "middle");
+            textPath.textContent = "UX Design Brand e Website";
+
+            // Anexa os elementos juntos
+            text.appendChild(textPath);
+            svg.appendChild(path);
+            svg.appendChild(text);
+            curveTextContainer.appendChild(svg);
+        });
+    </script>
 
     <!-- Start Background Move 
     ============================================= -->
