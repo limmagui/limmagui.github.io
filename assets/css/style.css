@@ -2562,6 +2562,12 @@ button i {
         letter-spacing: 1px; /* Ajuste conforme necessário */
     }
 }
+
+.svg-container {
+	width: 150px;
+	height: 150px;
+  }
+
 a.btn-round-animation {
 	display: inline-block;
 	height: 180px;
