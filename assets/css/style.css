@@ -9702,7 +9702,7 @@ input:checked + .slider:after {
 }
 /* Fim do estilo do toggle deslizante */
 
-/*inio circulo banner*/
+/*inicio circulo banner*/
 
 .curve-text {
     position: relative;
@@ -9717,7 +9717,7 @@ input:checked + .slider:after {
 }
 
 .curve-text text {
-    font-size: 25px;
+    font-size: 30px;
     fill: #000; /* Ajuste a cor conforme necessário */
 }
 
