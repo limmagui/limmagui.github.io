@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const text = document.createElementNS(svgNS, "text");
     const textPath = document.createElementNS(svgNS, "textPath");
     textPath.setAttribute("href", "#textPath");
-    textPath.textContent = "UX Design Brand e Website";
+    textPath.textContent = "teste";
 
     // Anexa os elementos juntos
     text.appendChild(textPath);
