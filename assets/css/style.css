@@ -9753,65 +9753,56 @@ input:checked + .slider:after {
 /* Inicio do estilo "ver mais" no portifolio */
 
 /* Btn Animation Ver Mais */
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centralizar o conteúdo da página */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Btn Animation Ver Mais */
 .btn-animation-ver-mais {
     z-index: 1;
     position: relative;
     font-size: 18px;
-    display: inline-block;
-    margin: 20px auto 0; /* Centralizado horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    margin: 20px auto; /* Centralizado horizontalmente */
     text-align: center;
     color: var(--white);
-}
-
-.bg-dark .btn-animation-ver-mais {
-    color: var(--white);
-    text-align: center;
-}
-
-.btn-animation-ver-mais i {
-    display: inline-block;
-    height: 55px;
-    width: 55px;
-    text-align: center;
-    line-height: 55px;
-    background: var(--white);
-    color: var(--color-heading);
-    border-radius: 50%;
-    font-weight: 400;
-    margin-right: 10px;
-    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out; /* Adicionado para suavizar a transição */
-    transform: scale(1);
-    vertical-align: middle;
-}
-
-.btn-animation-ver-mais:hover i {
-    background-color: var(--hover-bg-color); /* Cor de fundo do círculo ao passar o mouse */
-    color: var(--hover-color); /* Cor do ícone ao passar o mouse */
-}
-
-.btn-animation-ver-mais span {
-    transition: color 0.35s ease-in-out; /* Adicionado para suavizar a transição da cor do texto */
-    left: 0; /* Posicionamento inicial do texto */
-    position: relative;
+    background-color: var(--color-primary);
     text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas, opcional */
+    cursor: pointer;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 }
 
-.btn-animation-ver-mais:hover span {
+/* Efeito ao passar o mouse sobre o botão */
+.btn-animation-ver-mais:hover {
+    background-color: var(--hover-bg-color); /* Cor de fundo ao passar o mouse */
     color: var(--hover-color); /* Cor do texto ao passar o mouse */
 }
 
-.btn-animation-ver-mais.dark i {
-    background: var(--color-primary);
+/* Opcional: Tema escuro */
+.bg-dark .btn-animation-ver-mais {
+    background-color: var(--color-primary);
     color: var(--white);
 }
 
-.btn-animation-ver-mais.dark:hover i {
-    background-color: var(--hover-bg-color-dark); /* Cor de fundo do círculo ao passar o mouse no tema escuro */
-    color: var(--hover-color); /* Cor do ícone ao passar o mouse no tema escuro */
-}
-
-.btn-animation-ver-mais.dark:hover span {
+.btn-animation-ver-mais.dark:hover {
+    background-color: var(--hover-bg-color-dark); /* Cor de fundo ao passar o mouse no tema escuro */
     color: var(--hover-color); /* Cor do texto ao passar o mouse no tema escuro */
 }
