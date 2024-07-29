@@ -99,9 +99,9 @@ Sidebar heading:  22px 'Manrope', sans-serif
 	--box-shadow-regular: 0px 2px 12px 0px #e7e7e7;
 	--bg-gray: #f1f3f5;
 	--bg-gradient: linear-gradient(45deg, #75A5D9 0%, #5a57fb 50%);
-	--hover-bg-color: #75A5D9; /* Cor de fundo do círculo ao passar o mouse */
+	--hover-bg-color: #285EAA; /* Cor de fundo do círculo ao passar o mouse */
     	--hover-color: #FFFFFF; /* Cor do ícone e do texto ao passar o mouse */
-    	--hover-bg-color-dark: #75A5D9; /* Cor de fundo do círculo ao passar o mouse no tema escuro */
+    	--hover-bg-color-dark: #285EAA; /* Cor de fundo do círculo ao passar o mouse no tema escuro */
 }
 }
 
