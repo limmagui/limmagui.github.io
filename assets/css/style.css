@@ -9747,8 +9747,20 @@ input:checked + .slider:after {
 }*/
 /*fim circulo banner*/
 /* Inicio do estilo "ver mais" no portifolio */
+
 .ver-mais-btn {
     display: block;
     margin: 20px auto 0; /* 20px de margem acima e 0 abaixo, centralizado horizontalmente */
     text-align: center;
+}
+/* Btn Animation */
+
+.btn-animation-ver-mais {
+	z-index: 1;
+	position: relative;
+	font-size: 18px;
+	display: inline-block;
+	margin-left: 10px;
+	margin: 20px auto 0; /* 20px de margem acima e 0 abaixo, centralizado horizontalmente */
+	text-align: center;
 }
