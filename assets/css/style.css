@@ -99,7 +99,9 @@ Sidebar heading:  22px 'Manrope', sans-serif
 	--box-shadow-regular: 0px 2px 12px 0px #e7e7e7;
 	--bg-gray: #f1f3f5;
 	--bg-gradient: linear-gradient(45deg, #75A5D9 0%, #5a57fb 50%);
-	--dark-bg-hover-ver-mais: #dde7f5; /* Defina a cor desejada */
+	--hover-bg-color: #e0e0e0; /* Cor de fundo do círculo ao passar o mouse */
+    	--hover-color: #333; /* Cor do ícone e do texto ao passar o mouse */
+    	--hover-bg-color-dark: #555; /* Cor de fundo do círculo ao passar o mouse no tema escuro */
 }
 }
 
@@ -9750,11 +9752,6 @@ input:checked + .slider:after {
 /*fim circulo banner*/
 /* Inicio do estilo "ver mais" no portifolio */
 
-.ver-mais-btn {
-    display: block;
-    margin: 20px auto 0; /* 20px de margem acima e 0 abaixo, centralizado horizontalmente */
-    text-align: center;
-}
 /* Btn Animation Ver Mais */
 
 .btn-animation-ver-mais {
@@ -9765,7 +9762,6 @@ input:checked + .slider:after {
     margin: 20px auto 0; /* Centralizado horizontalmente */
     text-align: center;
     color: var(--white);
-    transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out; /* Adicionado para suavizar a transição */
 }
 
 .bg-dark .btn-animation-ver-mais {
@@ -9784,23 +9780,18 @@ input:checked + .slider:after {
     border-radius: 50%;
     font-weight: 400;
     margin-right: 10px;
-    transition: all 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out; /* Adicionado para suavizar a transição */
     transform: scale(1);
     vertical-align: middle;
 }
 
-.btn-animation-ver-mais:hover {
-    color: var(--color-heading);
-    background-color: var(--white); /* Adicionado para alterar o fundo do botão */
-}
-
-.bg-dark .btn-animation-ver-mais:hover {
-    color: var(--color-heading);
-    background-color: var(--dark-bg-hover-ver-mais); /* Certifique-se de definir essa variável em seu CSS */
+.btn-animation-ver-mais:hover i {
+    background-color: var(--hover-bg-color); /* Cor de fundo do círculo ao passar o mouse */
+    color: var(--hover-color); /* Cor do ícone ao passar o mouse */
 }
 
 .btn-animation-ver-mais span {
-    transition: all 0.35s ease-in-out;
+    transition: color 0.35s ease-in-out; /* Adicionado para suavizar a transição da cor do texto */
     left: 0; /* Posicionamento inicial do texto */
     position: relative;
     text-transform: uppercase;
@@ -9809,7 +9800,7 @@ input:checked + .slider:after {
 }
 
 .btn-animation-ver-mais:hover span {
-    left: 0;
+    color: var(--hover-color); /* Cor do texto ao passar o mouse */
 }
 
 .btn-animation-ver-mais.dark i {
@@ -9817,6 +9808,11 @@ input:checked + .slider:after {
     color: var(--white);
 }
 
-.btn-animation-ver-mais.dark:hover {
-    color: var(--color-heading);
+.btn-animation-ver-mais.dark:hover i {
+    background-color: var(--hover-bg-color-dark); /* Cor de fundo do círculo ao passar o mouse no tema escuro */
+    color: var(--hover-color); /* Cor do ícone ao passar o mouse no tema escuro */
+}
+
+.btn-animation-ver-mais.dark:hover span {
+    color: var(--hover-color); /* Cor do texto ao passar o mouse no tema escuro */
 }
