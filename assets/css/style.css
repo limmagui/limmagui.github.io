@@ -9746,3 +9746,9 @@ input:checked + .slider:after {
     fill: #000; /* Ajuste a cor conforme necessário 
 }*/
 /*fim circulo banner*/
+/* Inicio do estilo "ver mais" no portifolio */
+.ver-mais-btn {
+    display: block;
+    margin: 20px auto 0; /* 20px de margem acima e 0 abaixo, centralizado horizontalmente */
+    text-align: center;
+}
