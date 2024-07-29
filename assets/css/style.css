@@ -9794,29 +9794,6 @@ input:checked + .slider:after {
     color: var(--white);
 }
 
-.btn-animation-ver-mais::after {
-    position: absolute;
-    left: -30px; /* Ajuste a posição para colocar o círculo perto do texto */
-    top: 50%;
-    transform: translateY(-50%) scale(1); /* Centralizar verticalmente */
-    content: "";
-    height: 60px;
-    width: 60px;
-    border: 1px solid #c2bfbf;
-    border-radius: 50%;
-    transition: all 0.35s ease-in-out;
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.1); /* Círculo transparente */
-}
-
-.bg-dark .btn-animation-ver-mais::after {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.btn-animation-ver-mais:hover::after {
-    background-color: rgba(255, 255, 255, 0.3); /* Alteração de cor no hover */
-}
-
 .btn-animation-ver-mais span {
     transition: all 0.35s ease-in-out;
     left: 0; /* Posicionamento inicial do texto */
