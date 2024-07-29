@@ -9753,7 +9753,6 @@ input:checked + .slider:after {
 /* Inicio do estilo "ver mais" no portifolio */
 
 /* Btn Animation Ver Mais */
-
 .btn-animation-ver-mais {
     z-index: 1;
     position: relative;
