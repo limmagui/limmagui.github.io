@@ -9753,7 +9753,7 @@ input:checked + .slider:after {
     margin: 20px auto 0; /* 20px de margem acima e 0 abaixo, centralizado horizontalmente */
     text-align: center;
 }
-/* Btn Animation */
+/* Btn Animation Ver Mais */
 
 .btn-animation-ver-mais {
 	z-index: 1;
@@ -9763,4 +9763,83 @@ input:checked + .slider:after {
 	margin-left: 10px;
 	margin: 20px auto 0; /* 20px de margem acima e 0 abaixo, centralizado horizontalmente */
 	text-align: center;
+}
+.bg-dark .btn-animation-ver-mais {
+	color: var(--white);
+}
+
+.btn-animation-ver-mais i {
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	text-align: center;
+	line-height: 55px;
+	background: var(--white);
+	color: var(--color-heading);
+	border-radius: 50%;
+	font-weight: 400;
+	margin-right: 10px;
+	transition: all 0.35s ease-in-out;
+	transform: scale(0);
+}
+
+.btn-animation-ver-mais:hover {
+	margin-left: 0;
+	color: var(--color-heading);
+}
+
+.bg-dark .btn-animation-ver-mais:hover {
+	color: var(--white);
+}
+
+.btn-animation-ver-mais:hover i {
+	transform: scale(1);
+}
+
+.btn-animation-ver-mais::after {
+	position: absolute;
+	left: -13px;
+	top: 0;
+	content: "";
+	height: 60px;
+	width: 60px;
+	border: 1px solid #c2bfbf;
+	border-radius: 50%;
+	transition: all 0.35s ease-in-out;
+	transform: scale(1);
+	z-index: -1;
+}
+
+.bg-dark .btn-animation-ver-mais::after {
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-animation-ver-mais:hover::after {
+	transform: scale(0);
+}
+
+.btn-animation-ver-mais span {
+	transition: all 0.35s ease-in-out;
+	left: -50px;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.btn-animation-ver-mais:hover span {
+	left: 0;
+}
+
+.btn-animation-ver-mais.dark::after {
+	border-color: #c5c5c5;
+	z-index: -1;
+}
+
+.btn-animation-ver-mais.dark i {
+	background: var(--color-primary);
+	color: var(--white);
+}
+
+.btn-animation-ver-mais.dark:hover {
+	color: var(--color-heading);
 }
