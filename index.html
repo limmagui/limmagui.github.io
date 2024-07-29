@@ -244,34 +244,17 @@
                 </div>
                 <div class="col-lg-3 offset-lg-1 banner-one-item text-center">
                     <div class="curve-text">
-                        <!-- SVG para dispositivos não-Apple -->
-                        <div id="nonAppleSvg" class="svg-container" style="display: none;">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
                             <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
                             <text id="textElement">
-                                <textPath href="#textPath" font-size="24">UX Design Brand e Website</textPath>
+                              <textPath href="#textPath" font-size="24">UX Design Brand e Website</textPath>
                             </text>
-                            </svg>
-                        </div>
-                        
-                        <!-- SVG para dispositivos Apple -->
-                        <div id="appleSvg" class="svg-container-apple curve-text-apple" style="display: none;">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
-                                <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
-                                <text id="textElement">
-                                    <textPath font-size="24">UX Design Brand e Website</textPath>
-                                </text>
-                                </svg>
-                            <a href="#"></a>
-                        </div>
-
-                        <script>
+                          </svg>
+                          <script>
                             if (/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent)) {
-                            document.getElementById('appleSvg').style.display = 'block';
-                            } else {
-                            document.getElementById('nonAppleSvg').style.display = 'block';
+                              document.getElementById('textElement').style.display = 'none';
                             }
-                        </script>
+                          </script>
                           
                           
                         <a href="https://www.youtube.com/watch?v=ipUuoMCEbDQ" class="popup-youtube"><i class="fas fa-arrow-right"></i></a>
