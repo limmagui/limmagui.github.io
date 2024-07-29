@@ -99,6 +99,8 @@ Sidebar heading:  22px 'Manrope', sans-serif
 	--box-shadow-regular: 0px 2px 12px 0px #e7e7e7;
 	--bg-gray: #f1f3f5;
 	--bg-gradient: linear-gradient(45deg, #75A5D9 0%, #5a57fb 50%);
+	--dark-bg-hover-ver-mais: #dde7f5; /* Defina a cor desejada */
+}
 }
 
 
@@ -9763,6 +9765,7 @@ input:checked + .slider:after {
     margin: 20px auto 0; /* Centralizado horizontalmente */
     text-align: center;
     color: var(--white);
+    transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out; /* Adicionado para suavizar a transição */
 }
 
 .bg-dark .btn-animation-ver-mais {
@@ -9788,10 +9791,12 @@ input:checked + .slider:after {
 
 .btn-animation-ver-mais:hover {
     color: var(--color-heading);
+    background-color: var(--white); /* Adicionado para alterar o fundo do botão */
 }
 
 .bg-dark .btn-animation-ver-mais:hover {
-    color: var(--white);
+    color: var(--color-heading);
+    background-color: var(--dark-bg-hover-ver-mais); /* Certifique-se de definir essa variável em seu CSS */
 }
 
 .btn-animation-ver-mais span {
