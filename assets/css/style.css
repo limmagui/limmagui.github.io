@@ -100,8 +100,8 @@ Sidebar heading:  22px 'Manrope', sans-serif
 	--bg-gray: #f1f3f5;
 	--bg-gradient: linear-gradient(45deg, #0db5c5 0%, #285eaa 100%);
 	--hover-bg-color: #285EAA; /* Cor de fundo do círculo ao passar o mouse */
-    	--hover-color: #FFFFFF; /* Cor do ícone e do texto ao passar o mouse */
-    	--hover-bg-color-dark: #285EAA; /* Cor de fundo do círculo ao passar o mouse no tema escuro */
+    --hover-color: #FFFFFF; /* Cor do ícone e do texto ao passar o mouse */
+    --hover-bg-color-dark: #285EAA; /* Cor de fundo do círculo ao passar o mouse no tema escuro */
 }
 
 
@@ -9813,4 +9813,11 @@ input:checked + .slider:after {
 
 .btn-animation-ver-mais.dark:hover span {
     color: var(--hover-color); /* Cor do texto ao passar o mouse no tema escuro */
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Faz o contêiner ocupar a altura total da viewport */
+    width: 100%; /* Faz o contêiner ocupar a largura total */
 }
