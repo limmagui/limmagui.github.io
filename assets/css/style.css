@@ -103,7 +103,6 @@ Sidebar heading:  22px 'Manrope', sans-serif
     	--hover-color: #FFFFFF; /* Cor do ícone e do texto ao passar o mouse */
     	--hover-bg-color-dark: #285EAA; /* Cor de fundo do círculo ao passar o mouse no tema escuro */
 }
-}
 
 
 
@@ -9750,25 +9749,7 @@ input:checked + .slider:after {
     fill: #000; /* Ajuste a cor conforme necessário 
 }*/
 /*fim circulo banner*/
-/* Inicio do estilo "ver mais" no portifolio */
 
-/* Btn Animation Ver Mais */
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Centralizar o conteúdo da página */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Btn Animation Ver Mais */
 /* Btn Animation Ver Mais */
 
 .btn-animation-ver-mais {
