@@ -9807,11 +9807,6 @@ input:checked + .slider:after {
     left: 0;
 }
 
-.btn-animation-ver-mais.dark::after {
-    border-color: #c5c5c5;
-    z-index: -1;
-}
-
 .btn-animation-ver-mais.dark i {
     background: var(--color-primary);
     color: var(--white);
