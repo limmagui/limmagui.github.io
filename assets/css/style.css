@@ -9766,6 +9766,7 @@ input:checked + .slider:after {
 }
 .bg-dark .btn-animation-ver-mais {
 	color: var(--white);
+	text-align: center;
 }
 
 .btn-animation-ver-mais i {
@@ -9781,11 +9782,13 @@ input:checked + .slider:after {
 	margin-right: 10px;
 	transition: all 0.35s ease-in-out;
 	transform: scale(0);
+	text-align: center;
 }
 
 .btn-animation-ver-mais:hover {
 	margin-left: 0;
 	color: var(--color-heading);
+	text-align: center;
 }
 
 .bg-dark .btn-animation-ver-mais:hover {
@@ -9808,6 +9811,7 @@ input:checked + .slider:after {
 	transition: all 0.35s ease-in-out;
 	transform: scale(1);
 	z-index: -1;
+	text-align: center;
 }
 
 .bg-dark .btn-animation-ver-mais::after {
@@ -9823,6 +9827,7 @@ input:checked + .slider:after {
 	left: -50px;
 	position: relative;
 	text-transform: uppercase;
+	text-align: center;
 	font-weight: 700;
 }
 
