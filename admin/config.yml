@@ -22,7 +22,7 @@ collections:
         file: "index.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
   - name: "icons" # Nova coleção para ícones
     label: "Ícones"
@@ -47,42 +47,42 @@ collections:
         file: "about-us.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
       - name: "contact-us"
         label: "Contato"
         file: "contact-us.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
       - name: "404"
         label: "Página 404"
         file: "404.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
       - name: "services"
         label: "Serviços"
         file: "services.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
       - name: "portfolio"
         label: "Portfólio"
         file: "portfolio.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
       - name: "team"
         label: "Equipe"
         file: "team.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "html" } # Use o widget html para editar HTML diretamente
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
       # Adicione outras páginas conforme necessário
 
