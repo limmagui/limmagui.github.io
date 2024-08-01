@@ -66,11 +66,41 @@ collections:
         label: "Página 404"
         file: "404.html"
         fields:
-          - { label: "Título", name: "title", widget: "string", data-netlify-cms: "error404Title" }
-          - { label: "Heading", name: "heading", widget: "string", data-netlify-cms: "error404Subtitle" }
-          - { label: "Descrição", name: "description", widget: "text", data-netlify-cms: "error404Message" }
-          - { label: "Texto do CTA", name: "cta_text", widget: "string", data-netlify-cms: "error404Button" }
-          - { label: "Link do CTA", name: "cta_link", widget: "string" }
+          - { label: "Título", name: "title", widget: "string", data-netlify-cms: "pageTitle" }
+          - { label: "Home Navigation", name: "navHome", widget: "markdown", data-netlify-cms: "navHome" }
+          - { label: "Digital Agency Navigation", name: "navDigitalAgency", widget: "markdown", data-netlify-cms: "navDigitalAgency" }
+          - { label: "Portfolio Interactive Navigation", name: "navPortfolioInteractive", widget: "markdown", data-netlify-cms: "navPortfolioInteractive" }
+          - { label: "Creative Agency Navigation", name: "navCreativeAgency", widget: "markdown", data-netlify-cms: "navCreativeAgency" }
+          - { label: "Home Light Version Navigation", name: "navHomeLightVersion", widget: "markdown", data-netlify-cms: "navHomeLightVersion" }
+          - { label: "Digital Agency Light Navigation", name: "navDigitalAgencyLight", widget: "markdown", data-netlify-cms: "navDigitalAgencyLight" }
+          - { label: "Creative Agency Light Navigation", name: "navCreativeAgencyLight", widget: "markdown", data-netlify-cms: "navCreativeAgencyLight" }
+          - { label: "Pages Navigation", name: "navPages", widget: "markdown", data-netlify-cms: "navPages" }
+          - { label: "About Us Navigation", name: "navAboutUs", widget: "markdown", data-netlify-cms: "navAboutUs" }
+          - { label: "Team Members Navigation", name: "navTeamMembers", widget: "markdown", data-netlify-cms: "navTeamMembers" }
+          - { label: "Team Details Navigation", name: "navTeamDetails", widget: "markdown", data-netlify-cms: "navTeamDetails" }
+          - { label: "Projects Navigation", name: "navProjects", widget: "markdown", data-netlify-cms: "navProjects" }
+          - { label: "Project Showcase Navigation", name: "navProjectShowcase", widget: "markdown", data-netlify-cms: "navProjectShowcase" }
+          - { label: "Project Details Navigation", name: "navProjectDetails", widget: "markdown", data-netlify-cms: "navProjectDetails" }
+          - { label: "Contato Us Navigation", name: "navContatoUs", widget: "markdown", data-netlify-cms: "navContatoUs" }
+          - { label: "Error Page Navigation", name: "navErrorPage", widget: "markdown", data-netlify-cms: "navErrorPage" }
+          - { label: "Serviços Navigation", name: "navServiços", widget: "markdown", data-netlify-cms: "navServiços" }
+          - { label: "Service Version One Navigation", name: "navServiceVersionOne", widget: "markdown", data-netlify-cms: "navServiceVersionOne" }
+          - { label: "Service Version Two Navigation", name: "navServiceVersionTwo", widget: "markdown", data-netlify-cms: "navServiceVersionTwo" }
+          - { label: "UX Strategy Navigation", name: "navUXStrategy", widget: "markdown", data-netlify-cms: "navUXStrategy" }
+          - { label: "Branding Navigation", name: "navBranding", widget: "markdown", data-netlify-cms: "navBranding" }
+          - { label: "UX Design Navigation", name: "navUXDesign", widget: "markdown", data-netlify-cms: "navUXDesign" }
+          - { label: "Social Media UX Navigation", name: "navSocialMediaUX", widget: "markdown", data-netlify-cms: "navSocialMediaUX" }
+          - { label: "Keyword Research Navigation", name: "navKeywordResearch", widget: "markdown", data-netlify-cms: "navKeywordResearch" }
+          - { label: "Blog Navigation", name: "navBlog", widget: "markdown", data-netlify-cms: "navBlog" }
+          - { label: "Blog Standard Navigation", name: "navBlogStandard", widget: "markdown", data-netlify-cms: "navBlogStandard" }
+          - { label: "Blog With Sidebar Navigation", name: "navBlogWithSidebar", widget: "markdown", data-netlify-cms: "navBlogWithSidebar" }
+          - { label: "Blog Grid Two Column Navigation", name: "navBlogGridTwoColumn", widget: "markdown", data-netlify-cms: "navBlogGridTwoColumn" }
+          - { label: "Blog Grid Three Column Navigation", name: "navBlogGridThreeColumn", widget: "markdown", data-netlify-cms: "navBlogGridThreeColumn" }
+          - { label: "Blog Single Navigation", name: "navBlogSingle", widget: "markdown", data-netlify-cms: "navBlogSingle" }
+          - { label: "Blog Single With Sidebar Navigation", name: "navBlogSingleWithSidebar", widget: "markdown", data-netlify-cms: "navBlogSingleWithSidebar" }
+          - { label: "Contato Navigation", name: "navContato", widget: "markdown", data-netlify-cms: "navContato" }
+          - { label: "Contato Question", name: "ContatoQuestion", widget: "markdown", data-netlify-cms: "ContatoQuestion" }
+          - { label: "Contato Email", name: "ContatoEmail", widget: "markdown", data-netlify-cms: "ContatoEmail" }
 
       - name: "services"
         label: "Serviços"
