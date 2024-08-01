@@ -2,10 +2,18 @@ backend:
   name: git-gateway
   branch: main # Altere para a branch principal do seu repositório
 
-media_folder: "assets/img" # Pasta onde as imagens serão armazenadas
+# Configurações de pastas para diferentes tipos de mídia
+media_folder: "assets/img" # Pasta padrão onde as imagens serão armazenadas
 public_folder: "/assets/img"
 
+media2_folder: "assets/img/" # Pasta onde ícones serão armazenados
+public2_folder: "/assets/img/"
+
+media3_folder: "assets/img/" # Pasta onde formas serão armazenadas
+public3_folder: "/assets/img/"
+
 collections:
+
   - name: "pages" # Nome da coleção
     label: "Páginas"
     files:
@@ -16,50 +24,67 @@ collections:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
+  - name: "icons" # Nova coleção para ícones
+    label: "Ícones"
+    folder: "assets/img/" # Pasta onde os ícones serão armazenados
+    create: true
+    fields:
+      - { label: "Nome", name: "name", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Arquivo", name: "file", widget: "file" }
+
+  - name: "shapes" # Nova coleção para formas
+    label: "Formas"
+    folder: "assets/img/" # Pasta onde as formas serão armazenadas
+    create: true
+    fields:
+      - { label: "Nome", name: "name", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Arquivo", name: "file", widget: "file" }
+
       - name: "about-us"
         label: "Sobre Nós"
         file: "about-us.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
       - name: "contact-us"
         label: "Contato"
         file: "contact-us.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
       - name: "404"
         label: "Página 404"
         file: "404.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Heading", name: "heading", widget: "string" }
-          - { label: "Descrição", name: "description", widget: "text" }
-          - { label: "Texto do CTA", name: "cta_text", widget: "string" }
-          - { label: "Link do CTA", name: "cta_link", widget: "string" }
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
       - name: "services"
         label: "Serviços"
         file: "services.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
       - name: "portfolio"
         label: "Portfólio"
         file: "portfolio.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
 
       - name: "team"
         label: "Equipe"
         file: "team.html"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Conteúdo", name: "content", widget: "markdown" } # Use o widget html para editar HTML diretamente
+
+      # Adicione outras páginas conforme necessário
 
   - name: "assets"
     label: "Imagens e Arquivos"
