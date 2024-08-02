@@ -5588,6 +5588,17 @@ a.pf-btn i {
 	margin-top: 0;
 }
 
+.experiencia {
+	font-size: 100px;
+	font-weight: 900;
+	background: var(--bg-gradient);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	position: relative;
+	margin-top: 0;
+}
+
 /* ============================================================== 
     # Brand
 =================================================================== */
@@ -9821,3 +9832,11 @@ input:checked + .slider:after {
     height: 10vh; /* Faz o contêiner ocupar a altura total da viewport */
     width: 100%; /* Faz o contêiner ocupar a largura total */
 }
+.bold-text {
+    font-weight: bold; /* Define o texto como negrito */
+}
+
+.regular-text {
+    font-weight: normal; /* Define o texto como regular */
+}
+
