@@ -57,12 +57,10 @@ collections:
           - label: "Título da Página"
             name: "pageTitle"
             widget: "string"
-            pattern: ["^[^<>]+$", "O título não pode conter caracteres < ou >"]
             default: "My Website"
           - label: "Título do Cabeçalho"
             name: "headerTitle"
             widget: "string"
-            pattern: ["^[^<>]+$", "O título não pode conter caracteres < ou >"]
             default: "Welcome to My Website"
           - label: "Descrição do Cabeçalho"
             name: "headerDescription"

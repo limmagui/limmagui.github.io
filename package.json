@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "A sample project",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "build": "webpack --mode production"
-  },
+"scripts": {
+  "start": "node index.js",
+  "build": "node build.js",
+  "build:webpack": "webpack --mode production"
+},
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "fs-extra": "^11.2.0"
   },
   "devDependencies": {
     "webpack": "^5.64.0",
