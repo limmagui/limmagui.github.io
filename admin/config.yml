@@ -1,127 +1,128 @@
 backend:
   name: git-gateway
-  branch: main # Altere para a branch principal do seu repositório
+  branch: main
 
-media_folder: "assets/img" # Pasta onde as imagens serão armazenadas
+media_folder: "assets/img"
 public_folder: "/assets/img"
 
 collections:
-  - name: "pages" # Nome da coleção
+  - name: "pages"
     label: "Páginas"
     files:
       - name: "index"
         label: "Página Inicial"
         file: "index.html"
         fields:
-          - { label: "Título", name: "title", widget: "string", data-netlify-cms: "pageTitle" }
-          - { label: "Home Navigation", name: "navHome", widget: "markdown", data-netlify-cms: "navHome" }
-          - { label: "Digital Agency Navigation", name: "navDigitalAgency", widget: "markdown", data-netlify-cms: "navDigitalAgency" }
-          - { label: "Portfolio Interactive Navigation", name: "navPortfolioInteractive", widget: "markdown", data-netlify-cms: "navPortfolioInteractive" }
-          - { label: "Creative Agency Navigation", name: "navCreativeAgency", widget: "markdown", data-netlify-cms: "navCreativeAgency" }
-          - { label: "Home Light Version Navigation", name: "navHomeLightVersion", widget: "markdown", data-netlify-cms: "navHomeLightVersion" }
-          - { label: "Digital Agency Light Navigation", name: "navDigitalAgencyLight", widget: "markdown", data-netlify-cms: "navDigitalAgencyLight" }
-          - { label: "Creative Agency Light Navigation", name: "navCreativeAgencyLight", widget: "markdown", data-netlify-cms: "navCreativeAgencyLight" }
-          - { label: "Pages Navigation", name: "navPages", widget: "markdown", data-netlify-cms: "navPages" }
-          - { label: "About Us Navigation", name: "navAboutUs", widget: "markdown", data-netlify-cms: "navAboutUs" }
-          - { label: "Team Members Navigation", name: "navTeamMembers", widget: "markdown", data-netlify-cms: "navTeamMembers" }
-          - { label: "Team Details Navigation", name: "navTeamDetails", widget: "markdown", data-netlify-cms: "navTeamDetails" }
-          - { label: "Projects Navigation", name: "navProjects", widget: "markdown", data-netlify-cms: "navProjects" }
-          - { label: "Project Showcase Navigation", name: "navProjectShowcase", widget: "markdown", data-netlify-cms: "navProjectShowcase" }
-          - { label: "Project Details Navigation", name: "navProjectDetails", widget: "markdown", data-netlify-cms: "navProjectDetails" }
-          - { label: "Contato Us Navigation", name: "navContatoUs", widget: "markdown", data-netlify-cms: "navContatoUs" }
-          - { label: "Error Page Navigation", name: "navErrorPage", widget: "markdown", data-netlify-cms: "navErrorPage" }
-          - { label: "Serviços Navigation", name: "navServiços", widget: "markdown", data-netlify-cms: "navServiços" }
-          - { label: "Service Version One Navigation", name: "navServiceVersionOne", widget: "markdown", data-netlify-cms: "navServiceVersionOne" }
-          - { label: "Service Version Two Navigation", name: "navServiceVersionTwo", widget: "markdown", data-netlify-cms: "navServiceVersionTwo" }
-          - { label: "UX Strategy Navigation", name: "navUXStrategy", widget: "markdown", data-netlify-cms: "navUXStrategy" }
-          - { label: "Branding Navigation", name: "navBranding", widget: "markdown", data-netlify-cms: "navBranding" }
-          - { label: "UX Design Navigation", name: "navUXDesign", widget: "markdown", data-netlify-cms: "navUXDesign" }
-          - { label: "Social Media UX Navigation", name: "navSocialMediaUX", widget: "markdown", data-netlify-cms: "navSocialMediaUX" }
-          - { label: "Keyword Research Navigation", name: "navKeywordResearch", widget: "markdown", data-netlify-cms: "navKeywordResearch" }
-          - { label: "Blog Navigation", name: "navBlog", widget: "markdown", data-netlify-cms: "navBlog" }
-          - { label: "Blog Standard Navigation", name: "navBlogStandard", widget: "markdown", data-netlify-cms: "navBlogStandard" }
-          - { label: "Blog With Sidebar Navigation", name: "navBlogWithSidebar", widget: "markdown", data-netlify-cms: "navBlogWithSidebar" }
-          - { label: "Blog Grid Two Column Navigation", name: "navBlogGridTwoColumn", widget: "markdown", data-netlify-cms: "navBlogGridTwoColumn" }
-          - { label: "Blog Grid Three Column Navigation", name: "navBlogGridThreeColumn", widget: "markdown", data-netlify-cms: "navBlogGridThreeColumn" }
-          - { label: "Blog Single Navigation", name: "navBlogSingle", widget: "markdown", data-netlify-cms: "navBlogSingle" }
-          - { label: "Blog Single With Sidebar Navigation", name: "navBlogSingleWithSidebar", widget: "markdown", data-netlify-cms: "navBlogSingleWithSidebar" }
-          - { label: "Contato Navigation", name: "navContato", widget: "markdown", data-netlify-cms: "navContato" }
-          - { label: "Contato Question", name: "ContatoQuestion", widget: "markdown", data-netlify-cms: "ContatoQuestion" }
-          - { label: "Contato Email", name: "ContatoEmail", widget: "markdown", data-netlify-cms: "ContatoEmail" }
+          - { label: "Título", name: "title", widget: "string", default: "Guilimma | Creative Design" }
+          - { label: "Home Navigation", name: "navHome", widget: "string", default: "Home" }
+          - { label: "Digital Agency Navigation", name: "navDigitalAgency", widget: "string", default: "Digital Agency" }
+          - { label: "Portfolio Interactive Navigation", name: "navPortfolioInteractive", widget: "string", default: "Portfolio Interactive" }
+          - { label: "Creative Agency Navigation", name: "navCreativeAgency", widget: "string", default: "Creative Agency" }
+          - { label: "Home Light Version Navigation", name: "navHomeLightVersion", widget: "string", default: "Home Light Version" }
+          - { label: "Digital Agency Light Navigation", name: "navDigitalAgencyLight", widget: "string", default: "Digital Agency" }
+          - { label: "Creative Agency Light Navigation", name: "navCreativeAgencyLight", widget: "string", default: "Creative Agency" }
+          - { label: "Pages Navigation", name: "navPages", widget: "string", default: "Pages" }
+          - { label: "About Us Navigation", name: "navAboutUs", widget: "string", default: "About Us" }
+          - { label: "Team Members Navigation", name: "navTeamMembers", widget: "string", default: "Team Members" }
+          - { label: "Team Details Navigation", name: "navTeamDetails", widget: "string", default: "Team Details" }
+          - { label: "Projects Navigation", name: "navProjects", widget: "string", default: "Projects" }
+          - { label: "Project Showcase Navigation", name: "navProjectShowcase", widget: "string", default: "Project Showcase" }
+          - { label: "Project Details Navigation", name: "navProjectDetails", widget: "string", default: "Project Details" }
+          - { label: "Contato Us Navigation", name: "navContatoUs", widget: "string", default: "Contato Us" }
+          - { label: "Error Page Navigation", name: "navErrorPage", widget: "string", default: "Error Page" }
+          - { label: "Serviços Navigation", name: "navServiços", widget: "string", default: "Serviços" }
+          - { label: "Service Version One Navigation", name: "navServiceVersionOne", widget: "string", default: "Service Version One" }
+          - { label: "Service Version Two Navigation", name: "navServiceVersionTwo", widget: "string", default: "Service Version Two" }
+          - { label: "UX Strategy Navigation", name: "navUXStrategy", widget: "string", default: "UX Strategy" }
+          - { label: "Branding Navigation", name: "navBranding", widget: "string", default: "Branding: Marcas com Identidade" }
+          - { label: "UX Design Navigation", name: "navUXDesign", widget: "string", default: "UX Design: Experiências que Encantam" }
+          - { label: "Social Media UX Navigation", name: "navSocialMediaUX", widget: "string", default: "Social Media UX" }
+          - { label: "Keyword Research Navigation", name: "navKeywordResearch", widget: "string", default: "Keyword Research" }
+          - { label: "Blog Navigation", name: "navBlog", widget: "string", default: "Blog" }
+          - { label: "Blog Standard Navigation", name: "navBlogStandard", widget: "string", default: "Blog Standard" }
+          - { label: "Blog With Sidebar Navigation", name: "navBlogWithSidebar", widget: "string", default: "Blog With Sidebar" }
+          - { label: "Blog Grid Two Column Navigation", name: "navBlogGridTwoColumn", widget: "string", default: "Blog Grid Two Column" }
+          - { label: "Blog Grid Three Column Navigation", name: "navBlogGridThreeColumn", widget: "string", default: "Blog Grid Three Column" }
+          - { label: "Blog Single Navigation", name: "navBlogSingle", widget: "string", default: "Blog Single" }
+          - { label: "Blog Single With Sidebar Navigation", name: "navBlogSingleWithSidebar", widget: "string", default: "Blog Single With Sidebar" }
+          - { label: "Contato Navigation", name: "navContato", widget: "string", default: "Contato" }
+          - { label: "Contato Question", name: "ContatoQuestion", widget: "string", default: "Have any Questions?" }
+          - { label: "Contato Email", name: "ContatoEmail", widget: "string", default: "info@atozen.com" }
+
       - name: "about-us"
         label: "Sobre Nós"
         file: "about-us.html"
         fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Título", name: "title", widget: "string", default: "Sobre Nós" }
+          - { label: "Conteúdo", name: "content", widget: "markdown", default: "Conteúdo sobre nós" }
 
       - name: "contact-us"
         label: "Contato"
         file: "contact-us.html"
         fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Título", name: "title", widget: "string", default: "Contato" }
+          - { label: "Conteúdo", name: "content", widget: "markdown", default: "Conteúdo de contato" }
 
       - name: "404"
         label: "Página 404"
         file: "404.html"
         fields:
-          - { label: "Título", name: "title", widget: "string", data-netlify-cms: "pageTitle" }
-          - { label: "Home Navigation", name: "navHome", widget: "markdown", data-netlify-cms: "navHome" }
-          - { label: "Digital Agency Navigation", name: "navDigitalAgency", widget: "markdown", data-netlify-cms: "navDigitalAgency" }
-          - { label: "Portfolio Interactive Navigation", name: "navPortfolioInteractive", widget: "markdown", data-netlify-cms: "navPortfolioInteractive" }
-          - { label: "Creative Agency Navigation", name: "navCreativeAgency", widget: "markdown", data-netlify-cms: "navCreativeAgency" }
-          - { label: "Home Light Version Navigation", name: "navHomeLightVersion", widget: "markdown", data-netlify-cms: "navHomeLightVersion" }
-          - { label: "Digital Agency Light Navigation", name: "navDigitalAgencyLight", widget: "markdown", data-netlify-cms: "navDigitalAgencyLight" }
-          - { label: "Creative Agency Light Navigation", name: "navCreativeAgencyLight", widget: "markdown", data-netlify-cms: "navCreativeAgencyLight" }
-          - { label: "Pages Navigation", name: "navPages", widget: "markdown", data-netlify-cms: "navPages" }
-          - { label: "About Us Navigation", name: "navAboutUs", widget: "markdown", data-netlify-cms: "navAboutUs" }
-          - { label: "Team Members Navigation", name: "navTeamMembers", widget: "markdown", data-netlify-cms: "navTeamMembers" }
-          - { label: "Team Details Navigation", name: "navTeamDetails", widget: "markdown", data-netlify-cms: "navTeamDetails" }
-          - { label: "Projects Navigation", name: "navProjects", widget: "markdown", data-netlify-cms: "navProjects" }
-          - { label: "Project Showcase Navigation", name: "navProjectShowcase", widget: "markdown", data-netlify-cms: "navProjectShowcase" }
-          - { label: "Project Details Navigation", name: "navProjectDetails", widget: "markdown", data-netlify-cms: "navProjectDetails" }
-          - { label: "Contato Us Navigation", name: "navContatoUs", widget: "markdown", data-netlify-cms: "navContatoUs" }
-          - { label: "Error Page Navigation", name: "navErrorPage", widget: "markdown", data-netlify-cms: "navErrorPage" }
-          - { label: "Serviços Navigation", name: "navServiços", widget: "markdown", data-netlify-cms: "navServiços" }
-          - { label: "Service Version One Navigation", name: "navServiceVersionOne", widget: "markdown", data-netlify-cms: "navServiceVersionOne" }
-          - { label: "Service Version Two Navigation", name: "navServiceVersionTwo", widget: "markdown", data-netlify-cms: "navServiceVersionTwo" }
-          - { label: "UX Strategy Navigation", name: "navUXStrategy", widget: "markdown", data-netlify-cms: "navUXStrategy" }
-          - { label: "Branding Navigation", name: "navBranding", widget: "markdown", data-netlify-cms: "navBranding" }
-          - { label: "UX Design Navigation", name: "navUXDesign", widget: "markdown", data-netlify-cms: "navUXDesign" }
-          - { label: "Social Media UX Navigation", name: "navSocialMediaUX", widget: "markdown", data-netlify-cms: "navSocialMediaUX" }
-          - { label: "Keyword Research Navigation", name: "navKeywordResearch", widget: "markdown", data-netlify-cms: "navKeywordResearch" }
-          - { label: "Blog Navigation", name: "navBlog", widget: "markdown", data-netlify-cms: "navBlog" }
-          - { label: "Blog Standard Navigation", name: "navBlogStandard", widget: "markdown", data-netlify-cms: "navBlogStandard" }
-          - { label: "Blog With Sidebar Navigation", name: "navBlogWithSidebar", widget: "markdown", data-netlify-cms: "navBlogWithSidebar" }
-          - { label: "Blog Grid Two Column Navigation", name: "navBlogGridTwoColumn", widget: "markdown", data-netlify-cms: "navBlogGridTwoColumn" }
-          - { label: "Blog Grid Three Column Navigation", name: "navBlogGridThreeColumn", widget: "markdown", data-netlify-cms: "navBlogGridThreeColumn" }
-          - { label: "Blog Single Navigation", name: "navBlogSingle", widget: "markdown", data-netlify-cms: "navBlogSingle" }
-          - { label: "Blog Single With Sidebar Navigation", name: "navBlogSingleWithSidebar", widget: "markdown", data-netlify-cms: "navBlogSingleWithSidebar" }
-          - { label: "Contato Navigation", name: "navContato", widget: "markdown", data-netlify-cms: "navContato" }
-          - { label: "Contato Question", name: "ContatoQuestion", widget: "markdown", data-netlify-cms: "ContatoQuestion" }
-          - { label: "Contato Email", name: "ContatoEmail", widget: "markdown", data-netlify-cms: "ContatoEmail" }
+          - { label: "Título", name: "title", widget: "string", default: "Guilimma | Creative Design" }
+          - { label: "Home Navigation", name: "navHome", widget: "string", default: "Home" }
+          - { label: "Digital Agency Navigation", name: "navDigitalAgency", widget: "string", default: "Digital Agency" }
+          - { label: "Portfolio Interactive Navigation", name: "navPortfolioInteractive", widget: "string", default: "Portfolio Interactive" }
+          - { label: "Creative Agency Navigation", name: "navCreativeAgency", widget: "string", default: "Creative Agency" }
+          - { label: "Home Light Version Navigation", name: "navHomeLightVersion", widget: "string", default: "Home Light Version" }
+          - { label: "Digital Agency Light Navigation", name: "navDigitalAgencyLight", widget: "string", default: "Digital Agency" }
+          - { label: "Creative Agency Light Navigation", name: "navCreativeAgencyLight", widget: "string", default: "Creative Agency" }
+          - { label: "Pages Navigation", name: "navPages", widget: "string", default: "Pages" }
+          - { label: "About Us Navigation", name: "navAboutUs", widget: "string", default: "About Us" }
+          - { label: "Team Members Navigation", name: "navTeamMembers", widget: "string", default: "Team Members" }
+          - { label: "Team Details Navigation", name: "navTeamDetails", widget: "string", default: "Team Details" }
+          - { label: "Projects Navigation", name: "navProjects", widget: "string", default: "Projects" }
+          - { label: "Project Showcase Navigation", name: "navProjectShowcase", widget: "string", default: "Project Showcase" }
+          - { label: "Project Details Navigation", name: "navProjectDetails", widget: "string", default: "Project Details" }
+          - { label: "Contato Us Navigation", name: "navContatoUs", widget: "string", default: "Contato Us" }
+          - { label: "Error Page Navigation", name: "navErrorPage", widget: "string", default: "Error Page" }
+          - { label: "Serviços Navigation", name: "navServiços", widget: "string", default: "Serviços" }
+          - { label: "Service Version One Navigation", name: "navServiceVersionOne", widget: "string", default: "Service Version One" }
+          - { label: "Service Version Two Navigation", name: "navServiceVersionTwo", widget: "string", default: "Service Version Two" }
+          - { label: "UX Strategy Navigation", name: "navUXStrategy", widget: "string", default: "UX Strategy" }
+          - { label: "Branding Navigation", name: "navBranding", widget: "string", default: "Branding: Marcas com Identidade" }
+          - { label: "UX Design Navigation", name: "navUXDesign", widget: "string", default: "UX Design: Experiências que Encantam" }
+          - { label: "Social Media UX Navigation", name: "navSocialMediaUX", widget: "string", default: "Social Media UX" }
+          - { label: "Keyword Research Navigation", name: "navKeywordResearch", widget: "string", default: "Keyword Research" }
+          - { label: "Blog Navigation", name: "navBlog", widget: "string", default: "Blog" }
+          - { label: "Blog Standard Navigation", name: "navBlogStandard", widget: "string", default: "Blog Standard" }
+          - { label: "Blog With Sidebar Navigation", name: "navBlogWithSidebar", widget: "string", default: "Blog With Sidebar" }
+          - { label: "Blog Grid Two Column Navigation", name: "navBlogGridTwoColumn", widget: "string", default: "Blog Grid Two Column" }
+          - { label: "Blog Grid Three Column Navigation", name: "navBlogGridThreeColumn", widget: "string", default: "Blog Grid Three Column" }
+          - { label: "Blog Single Navigation", name: "navBlogSingle", widget: "string", default: "Blog Single" }
+          - { label: "Blog Single With Sidebar Navigation", name: "navBlogSingleWithSidebar", widget: "string", default: "Blog Single With Sidebar" }
+          - { label: "Contato Navigation", name: "navContato", widget: "string", default: "Contato" }
+          - { label: "Contato Question", name: "ContatoQuestion", widget: "string", default: "Have any Questions?" }
+          - { label: "Contato Email", name: "ContatoEmail", widget: "string", default: "info@atozen.com" }
 
       - name: "services"
         label: "Serviços"
         file: "services.html"
         fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Título", name: "title", widget: "string", default: "Serviços" }
+          - { label: "Conteúdo", name: "content", widget: "markdown", default: "Conteúdo dos serviços" }
 
       - name: "portfolio"
         label: "Portfólio"
         file: "portfolio.html"
         fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Título", name: "title", widget: "string", default: "Portfólio" }
+          - { label: "Conteúdo", name: "content", widget: "markdown", default: "Conteúdo do portfólio" }
 
       - name: "team"
         label: "Equipe"
         file: "team.html"
         fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Título", name: "title", widget: "string", default: "Equipe" }
+          - { label: "Conteúdo", name: "content", widget: "markdown", default: "Conteúdo da equipe" }
 
   - name: "assets"
     label: "Imagens e Arquivos"
