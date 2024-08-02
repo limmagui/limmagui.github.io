@@ -149,6 +149,9 @@ collections:
               { label: "Instagram", name: "instagram", widget: "string" }
             ]}
 
+  - name: "pages"  # Nome da coleção
+    label: "Páginas"
+    files:
       - name: "Teste"
         label: "Teste Netlify"
         file: "testenetlify.html"
