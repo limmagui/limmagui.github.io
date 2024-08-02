@@ -57,16 +57,18 @@ collections:
           - label: "Título da Página"
             name: "pageTitle"
             widget: "string"
+            pattern: ["^[^<>]+$", "O título não pode conter caracteres < ou >"]
             default: "My Website"
           - label: "Título do Cabeçalho"
             name: "headerTitle"
             widget: "string"
+            pattern: ["^[^<>]+$", "O título não pode conter caracteres < ou >"]
             default: "Welcome to My Website"
           - label: "Descrição do Cabeçalho"
             name: "headerDescription"
             widget: "text"
             default: "This is a simple example of a static site."
-      
+
       - name: "about-us"
         label: "Sobre Nós"
         file: "about-us.html"
