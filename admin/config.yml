@@ -49,6 +49,24 @@ collections:
           - { label: "Contato Question", name: "ContatoQuestion", widget: "string", default: "Have any Questions?" }
           - { label: "Contato Email", name: "ContatoEmail", widget: "string", default: "info@atozen.com" }
 
+      
+      - name: "Teste"
+        label: "Teste Netlify"
+        file: "testenetlify.html"
+        fields:
+          - label: "Título da Página"
+            name: "pageTitle"
+            widget: "string"
+            default: "My Website"
+          - label: "Título do Cabeçalho"
+            name: "headerTitle"
+            widget: "string"
+            default: "Welcome to My Website"
+          - label: "Descrição do Cabeçalho"
+            name: "headerDescription"
+            widget: "text"
+            default: "This is a simple example of a static site."
+      
       - name: "about-us"
         label: "Sobre Nós"
         file: "about-us.html"
@@ -149,22 +167,3 @@ collections:
               { label: "Instagram", name: "instagram", widget: "string" }
             ]}
 
-  - name: "pages"  # Nome da coleção
-    label: "Páginas"
-    files:
-      - name: "Teste"
-        label: "Teste Netlify"
-        file: "testenetlify.html"
-        fields:
-          - label: "Título da Página"
-            name: "pageTitle"
-            widget: "string"
-            default: "My Website"
-          - label: "Título do Cabeçalho"
-            name: "headerTitle"
-            widget: "string"
-            default: "Welcome to My Website"
-          - label: "Descrição do Cabeçalho"
-            name: "headerDescription"
-            widget: "text"
-            default: "This is a simple example of a static site."
