@@ -6516,6 +6516,12 @@ ul.list-item li:first-child {
 	z-index: -1;
 }
 
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .achivement-items {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
